@@ -1,13 +1,14 @@
-import { Html, Head, Main, NextScript } from 'next/document'
+import React, { useState, useContext, useEffect } from "react";
 
-export default function Document() {
+//INTERNAL IMPORT
+import { HeroSection } from "../Components/index";
+
+const Home = () => {
   return (
-    <Html lang="en">
-      <Head />
-      <body>
-        <Main />
-        <NextScript />
-      </body>
-    </Html>
-  )
-}
+    <div>
+      <HeroSection accounts="hey" tokenData="DATA" />
+    </div>
+  );
+};
+
+export default Home;
